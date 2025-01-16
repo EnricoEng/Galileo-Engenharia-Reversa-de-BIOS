@@ -126,3 +126,73 @@ Compatível com shields Arduino do tipo UNO, permitindo a expansão de funcional
 ![Imagem da placa Galileo Gen2](images/placa.png)
 
 ![Diagrama da placa](images/diagrama.png)
+
+
+
+
+## Funcionalidades e Recursos
+
+
+
+
+
+
+## Configuração da Placa
+
+Fazer download da IDE do arduino em: https://www.arduino.cc/en/software
+
+Instalar a IDE. Após a instalação, abrir a IDE e ir em board manager para instalar a placa galileo.
+
+![Boards Manager - Intel i586 boards - Galileo](images/board_manager_arduino_ide.png)
+
+
+Conectar a placa na fonte de alimentação e, depois, conectar a placa no computador utilizando o cabo usb-microusb.
+
+Verificar qual o port. Na IDE em tools -> port.
+![Arduino - Tools - Port](images/arduino_tools_port_COM3_Intel_Galileo.png)
+
+
+Fazer download do Atualizador de Firmware e dos drivers do Intel Galileo em: https://www.intel.com.br/content/www/br/pt/download/18185/intel-galileo-firmware-updater-and-drivers.html
+
+- intelgalileofirmwareupdater-1.1.0-windows
+- intelgalileowindowsserialdrivers
+
+Descompactar os arquivos.
+
+Instalar o drivers se necessário.
+
+Executar o firmware-updater-1.1.0 se necessário.(Será necessário ter o JRE - Java Runtime Environment).
+![firmware-updater-1.1.0](images/galileo_firmware_update.png)
+
+
+
+
+
+
+# Instalação de um sistema operacional na placa
+
+Para instalar um sistema operacional na placa, é necessário fazer o download de uma imagem de algum linux (distros pequenas) e gravar em um cartão micro SD, utilizando por exemplo, o software "Win32DiskImager" para isso. 
+
+![Win32DiskImager](images/win32diskimager.png)
+
+Selecione a imagem e o device (seu micro sd) e clique em escrever (write).
+
+Após isso, remova o micro SD do seu computador, desligue a placa galileo e conecte o cartão micro SD nela. Ligue ela novamente e ela irá fazer o boot linux pelo cartão micro SD. 
+
+Para conseguir acessar o linux, há algumas maneiras. Neste caso, desliguei a placa, conectei um cabo ethernet nela e ao roteador. A ideia é acessar via ssh.
+
+Utilize algum software para varer a rede, por exemplo, "Advanced IP Scanner". 
+
+URL para download: [text](https://www.advanced-ip-scanner.com/br/)
+
+
+Ele é bem fácil de usar e possui uma GUI para aqueles que preferem. Basta iniciar ele e clicar em "Scan".
+
+![AdvancedIPScanner](images/AdvancedIPScanner.png)
+
+
+Encontre o ip da galileo.
+
+Agora, basta connectar utilizando via SSH.
+
+
