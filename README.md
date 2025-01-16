@@ -128,15 +128,6 @@ Compatível com shields Arduino do tipo UNO, permitindo a expansão de funcional
 ![Diagrama da placa](images/diagrama.png)
 
 
-
-
-## Funcionalidades e Recursos
-
-
-
-
-
-
 ## Configuração da Placa
 
 Fazer download da IDE do arduino em: https://www.arduino.cc/en/software
@@ -165,10 +156,6 @@ Executar o firmware-updater-1.1.0 se necessário.(Será necessário ter o JRE - 
 ![firmware-updater-1.1.0](images/galileo_firmware_update.png)
 
 
-
-
-
-
 # Instalação de um sistema operacional na placa
 
 Para instalar um sistema operacional na placa, é necessário fazer o download de uma imagem de algum linux (distros pequenas) e gravar em um cartão micro SD, utilizando por exemplo, o software "Win32DiskImager" para isso. 
@@ -193,6 +180,6 @@ Ele é bem fácil de usar e possui uma GUI para aqueles que preferem. Basta inic
 
 Encontre o ip da galileo.
 
-Agora, basta connectar utilizando via SSH.
+Agora, basta connectar via SSH.
 
 
